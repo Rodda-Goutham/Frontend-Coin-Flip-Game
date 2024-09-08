@@ -2,11 +2,14 @@
 # Overview
 This is the frontend for the Coin Flip Game, a decentralized application (dApp) built using Next.js, React, and TailwindCSS. The application allows users to connect their Ethereum wallet, place bets on a coin flip, and potentially double their bet amount based on the outcome. The frontend interacts with the Coin Flip Game smart contract deployed on the Ethereum network, using the Ethers.js library for blockchain interactions.
 ## After connecting wallet
-![Screenshot from 2024-09-08 01-31-22](https://github.com/user-attachments/assets/9bbbf7cd-ce99-41f3-be1a-d5b0466c281f)
+![Screenshot from 2024-09-08 01-31-22](https://github.com/user-attachments/assets/cf6d4000-862a-4c49-9e14-6bd9d815ebc9)
+
 ## After placing bet
-![Screenshot from 2024-09-08 01-31-53](https://github.com/user-attachments/assets/f7d0dad7-2027-45e4-95af-15f1e2334b0f)
+![Screenshot from 2024-09-08 01-31-53](https://github.com/user-attachments/assets/78c1dd0a-7203-44c6-b896-4e8999313af8)
+
 ## Result
-![Screenshot from 2024-09-08 01-33-26](https://github.com/user-attachments/assets/286a1948-b096-44bb-87df-6cea07f10fec)
+![Screenshot from 2024-09-08 01-33-26](https://github.com/user-attachments/assets/9b88ea90-6d5c-42f7-b324-b02203ff6bac)
+
 
 # Table of Contents
 - [Features](https://github.com/Rodda-Goutham/Frontend-Coin-Flip-Game/edit/main/README.md#features)
