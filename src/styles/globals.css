@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply flex flex-col items-center justify-center min-h-screen bg-[#564546];
+}
+
+.connect-button {
+  @apply absolute top-4 right-4;
+}
+
+.main-container {
+  @apply w-full max-w-sm p-8 bg-white shadow-md rounded-lg flex justify-between bg-blue-100;
+}
+
+.bet-amount {
+  @apply flex-1 mr-4;
+}
+
+.bet-amount-input {
+  @apply mb-6 w-full;
+}
+
+.side-buttons {
+  @apply flex justify-start items-center space-x-4;
+}
+
+.side-button {
+  @apply px-6 py-3 rounded-full text-white bg-blue-500 hover:bg-green-500 transition-colors duration-300;
+}
+
+.flip-button {
+  @apply mt-6 px-6 py-3 rounded-full text-white bg-blue-500 hover:bg-green-500 transition-colors duration-300;
+}
+
+.success-message {
+  @apply mt-2 text-green-500 text-center;
+}
+
+.error-message {
+  @apply mt-4 text-red-500 text-center;
+}
+
+.play-again {
+  @apply mt-6 px-6 py-3 rounded-full text-white bg-blue-500 hover:bg-green-500 transition-colors duration-300;
+}
+
+.choose-side-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #011835;
+  text-align: start;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: linear-gradient(90deg, #006eff, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.choice {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #011835;
+  text-align: start;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  background: linear-gradient(90deg, #006eff, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 0.7;
+  }
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.loading-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  animation: pulse 1s infinite ease-in-out;
+  margin-right: 10px;
+}
+
+.loading-spinner {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #ffffff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: rotate 1s linear infinite;
+}
+
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.result-message {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.result-message.win {
+  color: #049409;
+}
+
+.result-message.lose {
+  color: #df1709;
+}
+
+.coin-result,
+.amount-result {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.close-result {
+  margin-top: 1rem;
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
